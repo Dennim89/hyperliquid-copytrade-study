@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+# API responses and reports from local runs (synthetic or live)
+raw/
+demo*/
+study*/
+copytrade_hl_report.json

@@ -1,0 +1,726 @@
+{
+ "blocks_nominal_utc": {
+  "anchor_range": [
+   "2026-09-25T14:29Z",
+   "2026-09-25T15:05Z"
+  ],
+  "blocks": {
+   "1": [
+    "2026-05-28T14:29Z",
+    "2026-06-27T14:29Z"
+   ],
+   "2": [
+    "2026-06-27T14:29Z",
+    "2026-07-27T14:29Z"
+   ],
+   "3": [
+    "2026-07-27T14:29Z",
+    "2026-08-26T14:29Z"
+   ],
+   "4": [
+    "2026-08-26T14:29Z",
+    "2026-09-25T14:29Z"
+   ]
+  }
+ },
+ "data_quality": {
+  "leaderboard_vs_master_plus_subs": {
+   "no_subs": {
+    "month_pnl_rel_diff_q50_q90": [
+     0.0133,
+     0.1214
+    ],
+    "n": 327,
+    "share_av_within_5pct": 0.972477,
+    "share_month_pnl_within_5pct": 0.675841
+   },
+   "with_subs": {
+    "month_pnl_rel_diff_q50_q90": [
+     0.031,
+     0.1132
+    ],
+    "n": 62,
+    "share_av_within_5pct": 0.935484,
+    "share_month_pnl_within_5pct": 0.564516
+   }
+  },
+  "note": "relative diff = |portfolio - leaderboard| / max(|leaderboard|, $1000); residual gaps come from the time shift, equally with and without sub-accounts",
+  "perp_block_status_counts_blocks_3_4": {
+   "capital<min": 493,
+   "capital<min_active": 33,
+   "degenerate": 11,
+   "inactive": 12,
+   "ok": 229
+  },
+  "traders_fetched": 389
+ },
+ "docs": {
+  "contract_specs": {
+   "fetched_ms": 1790347393821,
+   "quotes": {
+    "funding payments every hour": true
+   },
+   "saved": true,
+   "sha256": "2ba0df1e08f2c2164a34ffb88521348457fdfa1f4cab350d51e3b666185d7656",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications"
+  },
+  "error_responses": {
+   "fetched_ms": 1790347395573,
+   "quotes": {
+    "Order must have minimum value of $10.": true
+   },
+   "saved": true,
+   "sha256": "9c7eadc236607e437e58f55e362967dfaf4eadbdee3a861052e84f791e92d961",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/error-responses"
+  },
+  "fees": {
+   "fetched_ms": 1790347397276,
+   "quotes": {
+    "Perps fee tiers Base rate": true,
+    "Tier 14d weighted volume ($) Taker Maker Taker Maker Taker Maker Taker Maker Taker Maker Taker Maker Taker Maker 0 0.045% 0.015%": true
+   },
+   "saved": true,
+   "sha256": "ffbe31c4d30dd63e6c3108f36c485ec51e38098be000c9fc37f56617a2b83c89",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+  },
+  "info_endpoint": {
+   "fetched_ms": 1790347399061,
+   "quotes": {
+    "Only the most recent 5000 candles are available": true,
+    "Responses that take a time range will only return 500 elements or distinct blocks of data.": true,
+    "Returns at most 2000 fills per response and only the 10000 most recent fills are available": true
+   },
+   "saved": true,
+   "sha256": "eb7b5f1d097f1506ff3cd7f9a3edc80650badf221ea21b90330db1255828cde3",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint"
+  },
+  "rate_limits": {
+   "fetched_ms": 1790347401014,
+   "quotes": {
+    "All other documented info requests have weight 20.": true,
+    "The candleSnapshot info endpoint has an additional rate limit weight per 60 items returned in the response.": true,
+    "The following info endpoints have an additional rate limit weight per 20 items returned in the response: recentTrades, historicalOrders, userFills, userFillsByTime, fundingHistory, userFunding": true,
+    "The following info requests have weight 2: l2Book, allMids, clearinghouseState, orderStatus, spotClearinghouseState, exchangeStatus.": true,
+    "The following rate limits apply per IP address: REST requests share an aggregated weight limit of 1200 per minute.": true
+   },
+   "saved": true,
+   "sha256": "6c6bc8808078ea86f88f51b7b543979ea9b8abaefe82541a72cefe606499e705",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits"
+  }
+ },
+ "fees_used": {
+  "min_order_usd": "10",
+  "taker": "0.00045"
+ },
+ "followability": {
+  "reason": "persistence gate failed (pre-registered stop; brief step 2)",
+  "skipped": true
+ },
+ "gate": {
+  "enough_n": true,
+  "excess_ci_lo_gt_0": false,
+  "n": 99,
+  "pass": false,
+  "rho_ci_lo_gt_0": true
+ },
+ "headline": {
+  "api_requests": 929,
+  "follower_simulation": "not run: gate failed (pre-registered stop)",
+  "leaderboard_pit_top200_next_month": {
+   "active_base": 0.781486,
+   "excess_ci": [
+    -0.010536,
+    0.101196
+   ],
+   "share_positive": 0.826816
+  },
+  "mean_rho_ci": [
+   -0.086201,
+   0.158294
+  ],
+  "mean_rho_three_pairs": 0.034713,
+  "persistence_gate_passed": false,
+  "primary_perp_roi_A3_B4": {
+   "all_positive_B": "46/99",
+   "excess": 0.20202,
+   "excess_ci": [
+    -0.181818,
+    0.515404
+   ],
+   "mean_diff_ci": [
+    -1.594268,
+    1.078336
+   ],
+   "mean_roi_B_top_minus_all": -0.108073,
+   "n": 99,
+   "rho": 0.535807,
+   "rho_ci": [
+    0.338074,
+    0.698933
+   ],
+   "top_decile_positive_B": "6/9"
+  },
+  "rho_by_adjacent_pair": {
+   "1->2": 0.004558,
+   "2->3": -0.436226,
+   "3->4": 0.535807
+  },
+  "verdict": "NO-GO"
+ },
+ "leaderboard": {
+  "bytes": 39076181,
+  "fetched_utc_ms": 1790346519359,
+  "last_modified": "Fri, 25 Sep 2026 13:51:28 GMT",
+  "sha256": "afc5b3479067224e46dfe956bda94876de9664cecf981853c658c05c63af2a11",
+  "url": "https://stats-data.hyperliquid.xyz/Mainnet/leaderboard"
+ },
+ "persistence_primary": {
+  "all_positive_B": "46/99",
+  "base_share_positive_B": 0.464646,
+  "decile_transition": [
+   [
+    5,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    4,
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    2,
+    3,
+    3,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    5,
+    2,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    3,
+    1,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    3,
+    0,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    1
+   ]
+  ],
+  "diagonal_share": 0.222222,
+  "excess_ci": {
+   "hi": 0.515404,
+   "lo": -0.181818,
+   "share_draws_le_0": 0.132
+  },
+  "excess_share_positive": 0.20202,
+  "mean_B_diff": -0.108073,
+  "mean_B_diff_ci": {
+   "hi": 1.078336,
+   "lo": -1.594268,
+   "share_draws_le_0": 0.4825
+  },
+  "n": 99,
+  "n_top_decile": 9,
+  "spearman_ci": {
+   "hi": 0.698933,
+   "lo": 0.338074,
+   "share_draws_le_0": 0.0
+  },
+  "spearman_rho": 0.535807,
+  "top_decile_positive_B": "6/9",
+  "top_decile_share_positive_B": 0.666667,
+  "top_to_top_share": 0.111111
+ },
+ "persistence_secondary": {
+  "abs_pnl_perp_3to4": {
+   "all_positive_B": "46/99",
+   "base_share_positive_B": 0.464646,
+   "excess_ci": {
+    "hi": 0.606061,
+    "lo": 0.222222,
+    "share_draws_le_0": 0.0
+   },
+   "excess_share_positive": 0.535354,
+   "n": 99,
+   "n_top_decile": 9,
+   "spearman_ci": {
+    "hi": 0.842607,
+    "lo": 0.55382,
+    "share_draws_le_0": 0.0
+   },
+   "spearman_rho": 0.715448,
+   "top_decile_positive_B": "9/9",
+   "top_decile_share_positive_B": 1.0
+  },
+  "control_group_perp_roi_3to4": {
+   "all_positive_B": "26/49",
+   "base_share_positive_B": 0.530612,
+   "excess_ci": {
+    "hi": 0.510204,
+    "lo": -0.362245,
+    "share_draws_le_0": 0.354
+   },
+   "excess_share_positive": -0.030612,
+   "mean_B_diff": -0.890458,
+   "mean_B_diff_ci": {
+    "hi": 1.463135,
+    "lo": -2.516934,
+    "share_draws_le_0": 0.468
+   },
+   "n": 49,
+   "n_top_decile": 4,
+   "spearman_ci": {
+    "hi": 0.739412,
+    "lo": 0.260618,
+    "share_draws_le_0": 0.0005
+   },
+   "spearman_rho": 0.523776,
+   "top_decile_positive_B": "2/4",
+   "top_decile_share_positive_B": 0.5
+  },
+  "diagnostic_rho_by_pair_and_group": {
+   "1->2_ctrl": {
+    "n": 44,
+    "rho": 0.013953
+   },
+   "1->2_top": {
+    "n": 60,
+    "rho": -0.13865
+   },
+   "2->3_ctrl": {
+    "n": 45,
+    "rho": -0.509354
+   },
+   "2->3_top": {
+    "n": 58,
+    "rho": -0.315451
+   },
+   "3->4_ctrl": {
+    "n": 49,
+    "rho": 0.523776
+   },
+   "3->4_top": {
+    "n": 51,
+    "rho": 0.591674
+   },
+   "note": "NOT pre-registered: looked at after the primary result, to check whether the 2->3 sign flip is a top-group selection (collider) artifact; the control group cannot carry that bias"
+  },
+  "leaderboard_population": {
+   "all_rows": {
+    "n": 46869,
+    "share_pnl_neg": 0.151422,
+    "share_pnl_pos": 0.570612
+   },
+   "excess_ci": {
+    "hi": 0.101196,
+    "lo": -0.010536,
+    "share_draws_le_0": 0.0495
+   },
+   "month_active_rows": {
+    "n": 34222,
+    "share_pnl_neg": 0.207381,
+    "share_pnl_pos": 0.781486
+   },
+   "note": "absolute PnL ranks, size-driven",
+   "pit_top200_active_excess_share_pos_vs_active_base": 0.04533,
+   "pit_top200_all": {
+    "n": 200,
+    "share_pnl_neg": 0.15,
+    "share_pnl_pos": 0.74
+   },
+   "pit_top200_month_active": {
+    "n": 179,
+    "share_pnl_neg": 0.167598,
+    "share_pnl_pos": 0.826816
+   },
+   "share_pos_by_pit_decile_active_best_first": [
+    0.87584,
+    0.891292,
+    0.887493,
+    0.862361,
+    0.838983,
+    0.743792,
+    0.657218,
+    0.651958,
+    0.697838,
+    0.708065
+   ],
+   "spearman_bootstrap_note": "ranks computed once on the full sample, resampled pairs",
+   "spearman_ci": {
+    "hi": 0.403526,
+    "lo": 0.383672,
+    "share_draws_le_0": 0.0
+   },
+   "spearman_pit_pnl_vs_month_pnl_active": 0.393773,
+   "what": "all leaderboard rows; formation = all-time PnL before the last 30 days (allTime-month), evaluation = leaderboard month window; sub-accounts aggregated by the leaderboard"
+  },
+  "mean_rho_three_pairs_perp": {
+   "mean_rho": 0.034713,
+   "mean_rho_ci": {
+    "hi": 0.158294,
+    "lo": -0.086201,
+    "share_draws_le_0": 0.2835
+   },
+   "note": "pairs 1->2 and 2->3 share the universe selection (PIT at block-4 start) with their B block: mild look-ahead, reported as secondary only",
+   "rho_by_pair": {
+    "1->2": 0.004558,
+    "2->3": -0.436226,
+    "3->4": 0.535807
+   }
+  },
+  "perp_roi_1to2": {
+   "all_positive_B": "51/103",
+   "base_share_positive_B": 0.495146,
+   "excess_ci": {
+    "hi": 0.324345,
+    "lo": -0.295146,
+    "share_draws_le_0": 0.4595
+   },
+   "excess_share_positive": 0.004854,
+   "mean_B_diff": 0.228223,
+   "mean_B_diff_ci": {
+    "hi": 1.385668,
+    "lo": -0.88061,
+    "share_draws_le_0": 0.3075
+   },
+   "n": 103,
+   "n_top_decile": 10,
+   "spearman_ci": {
+    "hi": 0.228966,
+    "lo": -0.225697,
+    "share_draws_le_0": 0.4755
+   },
+   "spearman_rho": 0.004558,
+   "top_decile_positive_B": "5/10",
+   "top_decile_share_positive_B": 0.5
+  },
+  "perp_roi_2to3": {
+   "all_positive_B": "47/102",
+   "base_share_positive_B": 0.460784,
+   "excess_ci": {
+    "hi": 0.14902,
+    "lo": -0.441176,
+    "share_draws_le_0": 0.8745
+   },
+   "excess_share_positive": -0.160784,
+   "mean_B_diff": -0.60352,
+   "mean_B_diff_ci": {
+    "hi": 0.35019,
+    "lo": -1.602545,
+    "share_draws_le_0": 0.9085
+   },
+   "n": 102,
+   "n_top_decile": 10,
+   "spearman_ci": {
+    "hi": -0.22591,
+    "lo": -0.611449,
+    "share_draws_le_0": 1.0
+   },
+   "spearman_rho": -0.436226,
+   "top_decile_positive_B": "3/10",
+   "top_decile_share_positive_B": 0.3
+  },
+  "top_group_perp_roi_3to4": {
+   "all_positive_B": "20/51",
+   "base_share_positive_B": 0.392157,
+   "excess_ci": {
+    "hi": 0.705882,
+    "lo": -0.05098,
+    "share_draws_le_0": 0.039
+   },
+   "excess_share_positive": 0.407843,
+   "mean_B_diff": 0.297996,
+   "mean_B_diff_ci": {
+    "hi": 1.157962,
+    "lo": -0.788644,
+    "share_draws_le_0": 0.248
+   },
+   "n": 51,
+   "n_top_decile": 5,
+   "spearman_ci": {
+    "hi": 0.798626,
+    "lo": 0.317474,
+    "share_draws_le_0": 0.0
+   },
+   "spearman_rho": 0.591674,
+   "top_decile_positive_B": "4/5",
+   "top_decile_share_positive_B": 0.8
+  },
+  "total_roi_3to4": {
+   "all_positive_B": "196/248",
+   "base_share_positive_B": 0.790323,
+   "excess_ci": {
+    "hi": 0.10625,
+    "lo": -0.260753,
+    "share_draws_le_0": 0.763
+   },
+   "excess_share_positive": -0.123656,
+   "mean_B_diff": 0.210296,
+   "mean_B_diff_ci": {
+    "hi": 0.544899,
+    "lo": -0.033735,
+    "share_draws_le_0": 0.0395
+   },
+   "n": 248,
+   "n_top_decile": 24,
+   "spearman_ci": {
+    "hi": 0.484741,
+    "lo": 0.208448,
+    "share_draws_le_0": 0.0
+   },
+   "spearman_rho": 0.353466,
+   "top_decile_positive_B": "16/24",
+   "top_decile_share_positive_B": 0.666667
+  }
+ },
+ "protocol": {
+  "blocks": {
+   "anchor": "per account: last sample of the window (= fetch time)",
+   "block_days": 30,
+   "boundary": "nearest history sample to anchor-30*k days (ties: earlier); boundary before the first sample -> first sample (inception, pnl 0); nearest sample farther than 7 days -> account-block invalid",
+   "max_boundary_offset_days": 7,
+   "n_blocks": 4,
+   "windows_primary": "perpAllTime",
+   "windows_secondary": "allTime"
+  },
+  "followability": {
+   "delays_s": [
+    0,
+    10,
+    60,
+    300,
+    1800
+   ],
+   "episodes": "per account+coin, flat->flat (a flip closes and reopens); left/right-censored excluded",
+   "fee": "perps tier-0 taker 0.045% on every mirrored fill",
+   "followed": "top decile (primary ROI) in block 3 AND top decile in block 2; if fewer than 3: top decile in block 3 with ROI_2 > 0; cap 20 by ROI_3",
+   "funding": "leader userFunding per unit position",
+   "metric": "sum follower PnL / sum entry notional; cluster bootstrap by trader",
+   "price": "close of the candle containing t+d; finest interval available: 1m (last 5000 min), else 5m, else 15m",
+   "window": "block 4 (last 30 days); userFillsByTime pages of 2000, <=5 pages per account; only accounts with perp dPnL != 0 in block 4"
+  },
+  "primary_test": {
+   "bootstrap": {
+    "ci": "percentile 2.5/97.5",
+    "draws": 2000,
+    "seed": 20260925,
+    "unit": "trader"
+   },
+   "deciles": "sort by ROI ascending (ties by address), decile = floor(10*i/n); decile 9 = top",
+   "evaluation_block": 4,
+   "formation_block": 3,
+   "gate": "spearman CI low > 0 AND top-decile share-positive excess CI low > 0",
+   "if_gate_fails": "stop: no followability step (brief: verdict NO-GO for following)",
+   "min_n": 50,
+   "sample": "top200 U control200, valid ROI in both blocks",
+   "stats": [
+    "spearman_rho",
+    "top_decile_share_positive_minus_base",
+    "top_decile_mean_roi_minus_all",
+    "decile_transition_10x10"
+   ]
+  },
+  "roi": {
+   "active": "dPnL != 0",
+   "definition": "sum over accounts of dPnL / sum over accounts of time-weighted mean account value over the block (trapezoid on samples); an account created after the block end contributes 0",
+   "min_capital_usd": 1000
+  },
+  "scale": {
+   "capital_usd": [
+    500,
+    5000
+   ],
+   "min_order_usd": 10
+  },
+  "secondary": [
+   "per group (top / control)",
+   "absolute PnL instead of ROI",
+   "total windows (allTime: perp+spot)",
+   "earlier pairs 1->2 and 2->3, mean rho over the three pairs",
+   "leaderboard full population: PIT rank -> next-month pnl sign and leaderboard roi"
+  ],
+  "universe": {
+   "control_n": 200,
+   "control_positions": "floor((i+0.5)*N/200) for i=0..199, 0-based positions in the PIT ranking of all N rows",
+   "max_subs": 10,
+   "order": "interleaved top/control by rank",
+   "phase1_request_cap": 1400,
+   "ranking": "point-in-time (PIT) all-time PnL = leaderboard allTime.pnl - month.pnl, descending, ties by address; a leaderboard row = master + its sub-accounts",
+   "sub_accounts": "subAccounts request per candidate; trader = master + all subs; traders with more than K subs excluded; K = largest k<=10 whose portfolio requests fit the phase-1 cap",
+   "top_n": 200
+  },
+  "version": "copytrade_hl_20260925/v1"
+ },
+ "protocol_frozen_utc_ms": 1790347056509,
+ "protocol_matches_frozen_copy": true,
+ "published_copy_note": "Aggregates only. Removed from the original report before publication: the per-account rows (addresses with their ROI, capital and PnL), dollar totals and means, account-value figures, the leaderboard ROI means and the exchange copy-trading table; two explanatory notes were reworded to match. Everything else, including the protocol and all statistics, is as computed on 2026-09-25.",
+ "question": "Do publicly ranked Hyperliquid perp traders keep profitability out of sample, and does a delayed follower still make money after fees?",
+ "requests": {
+  "api_requests_total": 929,
+  "by_type": {
+   "candleSnapshot": 1,
+   "leaderboard": 1,
+   "portfolio": 527,
+   "subAccounts": 400
+  },
+  "exploratory_before_protocol_freeze": 7,
+  "failed_keys": 0,
+  "first_utc_ms": 1790346519359,
+  "http_429": 0,
+  "last_utc_ms": 1790348713337,
+  "pacing": "sleep weight*60/(0.70*1200) s after each request (1.43 s per weight-20 request); 429/errors: 60 s then 120 s, max 3 attempts",
+  "span_min": 36.6,
+  "weight_total": 18580
+ },
+ "scale": {
+  "min_order_usd": "10",
+  "note": "from account values, not fills: no position notionals or leverage measured; scale factor = follower capital C / current perp account value of a block-3 top-decile trader (proportional sizing)",
+  "scale_factor_500": {
+   "mean": 0.02300833
+  },
+  "scale_factor_5000": {
+   "mean": 0.23008329
+  },
+  "top_decile_A_traders": 9
+ },
+ "universe": {
+  "K_max_subs": 10,
+  "control_n": 200,
+  "current_top200_overlap_with_pit_top200": 183,
+  "leaderboard_rows": 46869,
+  "status_by_group": {
+   "ctrl": {
+    "None": 200
+   },
+   "top": {
+    "None": 190,
+    "subs>K": 10
+   }
+  },
+  "subs_count_hist": {
+   "0": 327,
+   "1": 33,
+   "12": 1,
+   "14": 1,
+   "19": 1,
+   "2": 8,
+   "22": 1,
+   "28": 1,
+   "3": 9,
+   "30": 1,
+   "4": 5,
+   "5": 4,
+   "50": 4,
+   "6": 2,
+   "7": 1
+  },
+  "survivorship": {
+   "note": "the list keeps zero-balance rows, but its inclusion rule is undocumented; accounts absent from the file cannot be sampled",
+   "pit_top200_now_av_lt_1000": 33,
+   "rows_av_lt_100": 19547,
+   "rows_av_zero": 3764,
+   "rows_month_active": 34222
+  },
+  "top_control_overlap": 1,
+  "top_n": 200,
+  "union": 399
+ },
+ "verdict": {
+  "class": "NO-GO",
+  "rule": "n < min_n -> INSUFFICIENT; gate fails -> NO-GO (brief: stop at step 2); gate passes -> follower at d=60 s: point <= 0 NO-GO; CI low <= 0 INSUFFICIENT; CI low > 0 and mean 30-day USD at $5000 < $100 POSITIVE_BUT_TOO_SMALL; else POSITIVE. (Rule written after the protocol freeze, before any result.)",
+  "why": "persistence gate failed: rank correlation significant (rho 0.535807, CI 0.338074..0.698933); top-decile excess share of positive B not significant (0.20202, CI -0.181818..0.515404; top decile 6/9 vs all 46/99); top-decile mean ROI_B minus all: -0.108073 (CI -1.594268..1.078336)"
+ }
+}
